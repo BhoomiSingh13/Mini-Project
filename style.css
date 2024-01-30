@@ -1,0 +1,291 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+} 
+/* header */
+#logo{
+  /*width: 200px;*/
+  margin:inherit ; 
+  height: 170px;
+  ;
+  
+}
+ul{
+    display: flex;
+    list-style: none;
+    
+}
+
+a{
+   text-decoration: none;
+   text-decoration-color: black;
+   font-size: 30px;
+   padding: 5px 20px ;
+   display: block;
+   border-radius: 20px;
+  color:white;
+}
+  .item a:hover{
+    color: black;
+    background-color: gold;
+}
+nav{
+    display: flex;
+    align-items: center;
+position: relative;
+}
+nav::before{
+content: "";
+background-color:black;
+position:absolute;
+height: 100%;
+width: 100%;
+z-index: -1;
+opacity:0.3;
+}
+#navbar{
+    position: sticky;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    
+}
+/*section  home*/
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+   
+}
+.home div:nth-child(2){
+    flex: 1;
+    display: flex;
+    justify-self: center;
+     /* padding-top: 40px;  */
+    
+}
+#home1{
+    padding-top: 40px;
+}
+.home div:nth-child(1){
+    flex:1;
+    padding-top: 20px;
+    font-size: 30px;
+    color: white;
+    padding-left: 30px;
+}
+.home div:nth-child(1) p{
+    font-size: 30px;
+    padding: 20px 0;
+}
+.home::before{
+    content: "";
+    /* background: url(backgroundimg2.png) no-repeat center center/cover ;
+     filter: blur(5px);
+     -webkit-filter: blur(5px);   */
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.99;
+    margin: 0px;
+  
+    
+}
+.home button{
+    cursor: pointer;
+    border-radius: 30px ;
+    border:none;
+font-size: 20px;
+ width:150x;
+height: 40px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  box-sizing: border-box;
+    background-color:rgba(243, 212, 35, 0.893);
+    padding: 5px 10px;
+}
+.home button:hover{
+background-color:gold;
+}
+#main_section{
+    background: url(backgroundimg2.png) no-repeat center center/cover ;
+    /* filter: blur(5px);
+    -webkit-filter: blur(5px);  
+    content: "";
+    z-index: -1;
+    opacity:0.99; */
+    
+}
+#demo1::before{
+    filter: blur(5px);
+    -webkit-filter: blur(5px);  
+    content: "";
+    z-index: -1;
+    opacity:0.99;
+}
+/* about us */
+   .about{
+    background-image: url(aboutus_bg_img.png);
+   
+    
+    /* height: 100%;
+     width: 100%;  */
+    /* position:absolute; 
+    margin-top: 5px; */
+    padding-top:50px;
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+.about h2{
+    padding-top: 5px;
+    color: gold;
+    font-size: 60px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  
+}
+.about p{
+    padding-top: 15px;
+padding-bottom: 100px;
+    color: white;
+    font-size: 20px;
+    padding-top: 30px ;
+    margin: 20px 20px ;
+} 
+
+
+/* ---------------menu------------- */
+
+
+.menu_1{
+    background-image: url(image\ 6.png);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    
+  
+}
+.menu_1 h1{
+    font-size: 70px;
+    color: gold;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+}
+ .menu_2{
+    padding-top: 130px;
+    display: flex;
+    align-items: center;
+    position:absolute;
+    flex-direction: row;
+    gap:40px;
+    justify-content:space-evenly;
+     padding-left: 10px;
+   /* padding-right: 50px; */
+  
+
+}
+.menu_2 h2{
+    font-size: 50px;
+    color: rgb(245, 225, 9);
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+/* -----------Book Table------------------- */
+
+
+.booktable{
+  background-image: url(bookTableBg.jpg);
+  background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    
+}
+.bookingform {
+  background-color: rgba(220, 203, 203, 0.22);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* height: 100%;
+    width: 100%; */
+  position: absolute;
+
+  padding: 20px;
+  margin: 60px 520px;
+  color: white;
+  /* padding: 20px; */
+  border-radius: 20px;
+  max-width: 400px;
+  width: 50%;
+  /* margin: 0 auto; */
+}
+.bookingform h1{
+color: gold;
+padding-bottom: 10px;
+text-align: center;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size:40px;
+ }   
+
+.bookingform form{
+  display: flex;
+  flex-direction: column;
+}
+.bookingform input{
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.bookingform button{
+  margin-top:15px;
+  padding: 8px 130px;
+  background-color:rgb(245, 223, 94);
+  color:black;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+.bookingform button:hover{
+  background-color:gold;
+}
+
+/* -----------footer------------- */
+
+
+.footer{
+  background-color: rgba(0, 0, 0, 0.913);
+  background-image: url(footer-illustration.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  width: 100%;
+  color:white;
+  position: absolute;
+  display: flex;
+  padding: 100px 50px;
+  padding-bottom: 200px;
+  gap: 50px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  justify-content:space-between;
+  
+}
+.footer h1{
+  color: gold;
+  font-size: 40px;
+}
+
